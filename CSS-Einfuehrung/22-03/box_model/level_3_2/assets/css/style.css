@@ -1,0 +1,96 @@
+@font-face {
+    font-family: frederick;
+    src: url('../fonts/FrederickatheGreat-Regular.ttf');
+}
+@font-face {
+    font-family: openSans;
+    src: url('../fonts/OpenSans-VariableFont_wdth\,wght.ttf');
+}
+* {
+    font-family: 'openSans', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+h1, 
+h2, h2 > span, h3 {
+    font-family: 'frederick', Arial, Helvetica, sans-serif;
+}
+
+section:first-of-type {
+    background: url('../image/istockphoto-1214705950-612x612.jpg') no-repeat #000;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+h1 {
+    color: #fff;
+    margin: 0 auto 10% auto;
+}
+a {
+    text-decoration: none;
+}
+section {
+    margin-bottom: 35px;
+}
+section > article { 
+    text-align: center;
+    margin-bottom: 10%;
+}
+section:first-of-type > article {
+    width:18%;
+}
+h2 {
+    margin: 0 auto 20px auto;
+}
+section:first-of-type > article h2 span {
+    text-transform: uppercase;
+}
+
+section:first-of-type > article p {
+    margin: 0 auto 20px auto;
+}
+section:first-of-type > article a, footer a {
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid #fff;
+}
+
+section:first-of-type > article a:hover, footer a:hover {
+    color: #000;
+    padding: 5px 20px;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+section > a:last-of-type {
+    display: block;
+    text-align: right;
+    margin-right: 40px;
+    color: #fff;
+}
+section:nth-of-type(2) article {
+    width: 38%;
+}
+section:nth-of-type(2) article p {
+    margin-bottom: 40px;
+}
+
+section:nth-of-type(2) article a {
+    display: inline-block;
+    color: #000;
+    border-style: double;
+    padding: 20px;
+}
+
+footer {
+    padding: 30px 20px;
+    background-color: rgb(83, 83, 83);
+    color: #fff;
+}
+footer p {
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+

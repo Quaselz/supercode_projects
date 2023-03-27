@@ -1,0 +1,35 @@
+/* Verwende die Schriftart Montserrat von fonts.google.com
+Benutze diese Farben: #a020f0, #00bfff, #32cd32, #c71585, #00ced1, #483d8b, #2e8b57
+Benutze diese Befehle: ::first-line, ::first-letter, ::before, ::after, ::selection
+*/
+
+@font-face {
+    font-family: monster;
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+*::selection {
+    color: #c71585;
+    background-color: #a020f0;
+}
+p::first-letter {
+    color: #00ced1;
+    font-size: larger;
+}
+p::first-line {
+    font-family: 'monster',Arial, Helvetica, sans-serif;
+    color: #483d8b;   
+}
+
+h1, h2 {
+    color: #2e8b57;
+}
+h1::before {
+    content: "HI!";
+    color: #32cd32;
+}
+
+h2::after {
+    content: "!";
+    color: #a020f0;
+}

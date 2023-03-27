@@ -1,0 +1,57 @@
+@font-face {
+    font-family: Montserrat;
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: raleway;
+    src: url('../fonts/Raleway-VariableFont_wght.ttf');
+}
+
+h3:hover {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    color: red;
+}
+
+ul li:first-child {
+    color: #4e342e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul li:nth-child(2) {
+    color: #689f38;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+ul li:nth-child(3) {
+    color: #ef5350;
+    font-family: 'raleway', Arial, Helvetica, sans-serif;
+}
+
+p:not(:last-child) {
+    font-size: 26px;
+}
+p:first-of-type {
+    color: #999;
+}
+
+p:nth-last-of-type(even) {
+    color: #ef5350;
+}
+
+button {
+    background-image: linear-gradient(to bottom right, green, blue);
+    transition: transform .2s;
+}
+
+button:hover {
+    background-image: linear-gradient(to top left, green, blue);
+    font-size: larger;
+    transform: scale(1.5);
+    color: blue;
+}
+
+button:active {
+    background-image: radial-gradient(center, red, orange);
+    color: green;
+}

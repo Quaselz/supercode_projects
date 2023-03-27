@@ -1,0 +1,43 @@
+h1 {
+    background-color: #473030;
+    color: #fff;
+    text-align: center;
+    font-size: 48px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p:first-of-type, 
+p:nth-child(2) 
+{
+    text-decoration: underline;
+}
+
+p:first-of-type {
+    text-transform: uppercase;
+}
+
+p:nth-of-type(2) span:first-of-type {
+    font-weight: bold;
+}
+p:nth-of-type(2) span:nth-of-type(2) {
+    font-style: italic;
+}
+
+h2 {
+    color: gray;
+    text-shadow: -2px -2px #000;
+    word-spacing: 30px;
+    letter-spacing: 3px;
+    text-indent: 10%;
+}
+ul {
+    background-color: lightgray;
+}
+
+ul li {
+    background-color: darkgrey;
+    text-indent: 10%;
+}
+li:not(:last-child) {
+    margin-bottom: 1em;
+}

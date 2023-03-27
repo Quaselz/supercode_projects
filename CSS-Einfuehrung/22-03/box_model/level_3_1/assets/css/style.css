@@ -1,0 +1,60 @@
+@font-face {
+    font-family: poppin;
+    src: url('../fonts/Poppins-Regular.ttf');
+}
+
+* {
+    font-family: 'poppin', Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+main > div {
+    width: 500px;
+    margin-top: 10%;
+    background-color: rgb(104, 189, 128);
+    border-radius: 5%;
+    text-align: center;
+    border: 2px solid #000;
+    box-shadow: 0 0 10px #000;
+}
+
+.index-div {
+    height: 700px;
+    border: 2px solid #000;
+    box-shadow: 0 0 10px #000;
+    background: no-repeat url("https://images.unsplash.com/photo-1503435980610-a51f3ddfee50?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+    background-position: center;
+}
+
+h1 {
+    margin: 50px 0;
+}
+
+.index-div h1{
+    margin: 50px;
+}
+
+a {
+    padding: 15px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    color: #000;
+}
+
+img {
+    display: block;
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+ul {
+    margin-top: 20px;
+    text-align: left;
+}
+
+main > div > div:last-of-type  {
+    margin: 30px auto;
+}

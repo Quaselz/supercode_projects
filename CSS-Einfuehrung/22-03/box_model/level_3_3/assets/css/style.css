@@ -1,0 +1,190 @@
+@font-face {
+    font-family: chinzel;
+    src: url('../fonts/Cinzel-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: poppin;
+    src: url('../fonts/Poppins-Regular.ttf');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    display: flex;
+    align-items: center;
+    width: 101.09px;
+    height: 25.5px;
+
+    font-family: 'chinzel', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18.72px;
+    line-height: 25px;
+    color: #999999;
+}
+
+section:nth-of-type(1) {
+    width: 1440px;
+    height: 577.09px;
+    background: url('../img/section.png'); 
+    margin-bottom: 79.91px;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    width: 615.06px;
+    height: 67.5px;
+    left: calc(50% - 615.06px/2 + 9.2px);
+    top: 254.8px;
+
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 67px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+section:nth-of-type(2) h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    /*width: 230.49px;*/
+    height: 32.5px;
+    text-align: center;
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+
+    margin: 0 auto 60.41px auto;
+}
+
+p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    /*width: 1122.75px;*/
+    height: 94.5px;
+    margin: 0 auto 77px auto;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+}
+
+main div img{
+    width: 360px;
+    height: 202.31px;
+    /*margin-right: 76.27px;*/
+    margin: 0 76.27px 86.5px auto;
+}
+
+main div {
+    margin-left: 108px;
+}
+
+main section:nth-of-type(3) h2{
+    
+    width: 205.43px;
+    height: 32.5px;
+
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    justify-content: center;
+    color: #333333;
+    margin: 0 auto 41.7px auto;
+}
+
+
+main section:nth-of-type(3) ul {
+    width: 80%;
+    margin: 0 auto 124.8px auto;
+}
+main section:nth-of-type(3) ul li{
+    
+    /*width: 811.95px;
+    height: 22.5px;*/
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: right;
+    list-style: none;
+    margin: 0 auto 16,5px auto;
+   
+    color: #333333;
+}
+
+span {
+    color: red;
+}
+
+ul > li:last-of-type span, ul > li:nth-of-type(5) span {
+    color: green
+}
+
+footer {
+
+    border-top: 1px solid #CCCCCC;
+}
+
+footer * {
+    text-align: center;
+    margin: 0 auto;
+}
+
+footer h2 {
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    padding-top:32.91px;
+
+    text-align: center;
+    color: #333333;
+}
+
+footer div {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18.72px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}

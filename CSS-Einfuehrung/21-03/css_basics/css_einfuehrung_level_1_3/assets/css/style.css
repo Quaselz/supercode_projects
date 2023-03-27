@@ -1,0 +1,14 @@
+div {
+    background-color: lightgray;
+}
+nav {
+    background-color: gray;
+    padding-left: 5%;
+}
+span,
+a {
+    color: red;
+}
+a {
+    display: block;
+}

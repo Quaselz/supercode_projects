@@ -1,0 +1,46 @@
+h1 {
+    font-size: 48px;
+    background: gray;
+    text-shadow: 2px 2px #000;
+    color: white;
+    text-align: center;
+}
+
+p:first-of-type,
+p:nth-of-type(2) {
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p:first-of-type {
+    text-indent: 5%;
+    word-spacing: 1rem;
+}
+
+p:first-of-type span {
+    text-transform: uppercase;
+}
+
+p:nth-of-type(2) {
+    text-indent: 8%;
+    word-spacing: -0.3rem;
+} 
+
+p:nth-of-type(2) span:first-of-type {
+    font-weight: bold;
+}
+p:nth-of-type(2) span:nth-of-type(2) {
+    font-style: italic;
+}
+h2 {
+    text-shadow: 2px 2px #000;
+    letter-spacing: 4px;
+}
+p:nth-of-type(3) {
+    background-color: gray;
+    line-height: 125%;
+}
+
+p:nth-of-type(4) {
+    background-color: darkgrey;
+    line-height: 150%;
+}

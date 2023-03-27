@@ -1,0 +1,10 @@
+section {
+    background: #fff url("https://www.w3schools.com/css/gradient_bg_vertical.png") repeat-y top left;
+}
+article {
+    border-top: #000 solid;
+    background: #fff url("https://picsum.photos/300/200") no-repeat top right;
+}
+article > h1 {
+    margin-top: 0;
+}
