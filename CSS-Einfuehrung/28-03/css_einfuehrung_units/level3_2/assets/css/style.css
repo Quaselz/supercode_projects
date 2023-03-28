@@ -43,26 +43,29 @@ nav a:not(:last-of-type) {
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 80%;
   }
 
 
 #main-content {
+    display: flex;
     border: 1px solid #000;
-    display: block;
     width: 100%;
     margin: 0 auto 5% auto;
+    justify-content: center;
 }
-main img {
+
+#main-content div {
+    display: inline-block;
+    width: 50%;
+}
+
+#main-content img {
     display: inline-block;
     width: 100%;
 
 }
-#main-content section {
-    display: inline-block;
-    width: 49%;
-    margin-bottom: 5%;
-}
+
 #main-content h1 {
     font-size: clamp(3rem, 100vw, 5rem);
     text-align: center;
@@ -74,7 +77,6 @@ main img {
 }
 
 main section:last-of-type {
-    display: block;
     margin: 0 auto;
     text-align: center;
 }
