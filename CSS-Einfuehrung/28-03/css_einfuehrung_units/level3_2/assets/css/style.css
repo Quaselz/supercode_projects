@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'edu';
+    src: url('../fonts/EduNSWACTFoundation-Regular.ttf');
+}
+
+:root {
+    --main_color: #4796f0;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: var(--main_color);
+    font-size: 62.5%;
+    font-family: 'edu', Arial, Helvetica, sans-serif;
+}
+header, main {
+    width: 100%;
+    padding: 10%;
+}
+nav {
+    overflow: hidden;
+    background-color: var(--main_color);
+    border-radius: 15px;
+} 
+nav a {
+    text-align: center;
+    padding: 0 5%;
+    font-size: 3rem;
+    color: #fff;
+    text-decoration: #000;
+}
+nav a:not(:last-of-type) {
+    border-right: 1px solid #000;
+}
+/* kommt mit js dazu */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+
+#main-content {
+    border: 1px solid #000;
+    display: block;
+    width: 100%;
+    margin: 0 auto 5% auto;
+}
+main img {
+    display: inline-block;
+    width: 100%;
+
+}
+#main-content section {
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 5%;
+}
+#main-content h1 {
+    font-size: clamp(3rem, 100vw, 5rem);
+    text-align: center;
+
+}
+#main-content p {
+    font-size: clamp(1.5rem, 1.5vw, 2.5rem);
+    text-align: center;
+}
+
+main section:last-of-type {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main > section:last-of-type a {
+    text-decoration: underline;
+    color: var(--main_color);
+    border: 1px solid #000;
+    background-color: #4796f040;
+    padding: 3%;
+    border-radius: 20px;
+    transition: 0.5s;
+    font-size: 2rem;
+}
+
+main section:last-of-type a:hover {
+    text-decoration: underline;
+    color: #000;
+    border: 1px solid var(--main_color);
+    padding: 3%;
+    border-radius: 20px;
+    padding: 4%;
+    font-size: 2.5rem;
+}
+
+
+
+

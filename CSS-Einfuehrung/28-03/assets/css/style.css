@@ -1,0 +1,48 @@
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    height: 400px;
+    display:block;
+}
+
+ .eins div {
+    background-color: blue;
+    width: 50vw;
+    display: inline-block;
+}
+
+.eins div:first-of-type
+{
+    background-color: aqua;
+}
+.zwei div {
+    background-color: green;
+    width: 50%;
+    display: inline-block;
+}
+
+.zwei div:first-of-type {
+    background-color: violet;
+}
+
+#vw {
+    width: 100vw;
+    background-color: chartreuse;
+}
+
+.vw50 {
+    width: 50vw;
+    background-color: wheat;
+}
