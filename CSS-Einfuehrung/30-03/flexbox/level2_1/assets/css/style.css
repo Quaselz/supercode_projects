@@ -1,0 +1,9 @@
+.bildergallerie {
+    background-color: orangered;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: center;
+    gap: 1rem;
+}
