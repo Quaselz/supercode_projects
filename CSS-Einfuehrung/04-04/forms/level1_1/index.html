@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Forms Level 1_1</title>
+</head>
+<body>
+     <form id="form1" method="get">
+        <p>Name: <span>*</span></p>
+        <div>
+            <label for="vorname"></label>
+            <input type="text" id="vorname" name="vorname" value="vorname" required>
+            <label for="nachname"></label>
+            <input type="text" id="nachname" name="nachname" value="nachname" required>
+        </div>
+        <label for="Email">E-Mail: <span>*</span></label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="thema">Thema:</label>
+        <select id="thema" name="thema">
+            <option value="volvo">General</option>
+            <option value="saab">Advertise</option>
+            <option value="fiat">Partnership</option>
+        </select>
+        <label for="message"> Nachricht: <span>*</span></label>
+        <textarea name="message" required></textarea>
+
+         <button type="submit" form="form1">Submit</button>
+        </form>  
+</body>
+</html>

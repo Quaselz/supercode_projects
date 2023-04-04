@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ div {
+    display: flex;
+    background-color: rgb(238, 238, 238);
+    width: 40%;
+    border-radius: 10px;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+ }
+
+ div h3 {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(91, 216, 174);
+    color: white;
+ }
+#form1 {
+    padding: 10px;
+}
+
+ #form1 input{
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+}
+
+ #form1 textarea{
+    margin-bottom: 5px;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 10px;
+
+    border: none;
+ }
+
+ #form1 button {
+    width: 100%;
+    background-color: rgb(91, 216, 174);
+    color: white;
+    border: none;
+    padding: 10px;
+ }

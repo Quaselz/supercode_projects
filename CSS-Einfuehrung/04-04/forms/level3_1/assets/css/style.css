@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+article {
+    width: 60%;
+    margin: 200px auto;
+    border-radius: 5px;
+    border: 1px solid  rgb(213, 213, 213);
+}
+
+article > section{
+    padding: 20px;
+    background-color: rgb(52, 120, 166);
+    color: white;
+    letter-spacing: 3px;
+    border-radius: 5px 5px 0 0;
+}
+
+form {
+    padding: 20px;
+    counter-reset: count;
+}
+
+fieldset {
+    border: none;
+    background-color: rgb(213, 213, 213);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+label {
+    padding-bottom: 3px;
+}
+
+h3 {
+    color: rgb(52, 120, 166);
+    font-size: larger;
+    position: relative;
+}
+
+h3::before {
+    counter-increment: count;
+    content: " " counter(count) " ";
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(52, 120, 166);
+    color: white;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    left: -30px;
+}
+
+input {
+    border: none;
+    padding: 8px;
+    margin-bottom: 5px;
+} 
+input:focus {
+    border: 1px solid rgb(52, 120, 166);
+} 
+
+button {
+    background-color: rgb(52, 120, 166);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+form div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
