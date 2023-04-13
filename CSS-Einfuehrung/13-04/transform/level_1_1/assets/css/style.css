@@ -1,0 +1,19 @@
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.animation div {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 10px;
+    transform-origin: bottom left;
+    transition: all 1s;
+}
+
+.animation:hover div {
+    transform: rotate(90deg) scale(2);
+}

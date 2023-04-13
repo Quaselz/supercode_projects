@@ -1,0 +1,19 @@
+
+.animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: #b90000;
+    animation: blink 10s infinite;
+}
+
+
+@keyframes blink {
+    0%, 100% {background-color: #b90000;}
+    25% {background-color: #34cc06; left: 96%; top:0;}
+    50% {background-color: #003aaf;top: 90%; left: 96%;}
+    75% {background-color: #f200b9;top: 90%; left: 0;}
+}

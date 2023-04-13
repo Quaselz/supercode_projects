@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+
+.animation {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin: 0 20px;
+    animation: loading .8s infinite alternate;
+}
+
+.animation:nth-of-type(1) {
+    background-color: green;
+    animation-delay: 200ms;
+}
+.animation:nth-of-type(2) {
+    background-color: blue;
+    animation-delay: 400ms;
+}
+.animation:nth-of-type(3) {    
+    background-color: yellow;
+    animation-delay: 600ms;
+}
+.animation:nth-of-type(4) {
+    background-color: red;
+    animation-delay: 800ms;
+}
+.animation:nth-of-type(5) {
+    background-color: purple;
+    animation-delay: 1000ms;
+}
+
+@keyframes loading {
+    0% {}
+    100% {transform: translateY(-50px);}
+}

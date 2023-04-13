@@ -1,0 +1,43 @@
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(201, 201, 201);
+}
+.animation > div {
+    position: relative;
+    overflow: hidden;
+}
+.animation > div > div{
+    background-color: black;
+    color: white;
+    opacity: 0.5;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transform-origin: bottom;
+    transform: translateY(250px);
+    transition: transform 1s;
+}
+
+img {
+    overflow: hidden;
+}
+
+.animation > div:hover div {
+    transform: translateY(0);
+}

@@ -1,0 +1,44 @@
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.animation {
+    width: 500px;
+    height: 100px;
+    background-color: rgb(201, 201, 201);
+    display: flex;
+    align-items: flex-end;
+}
+
+.animation div {
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s ease-in;
+}
+
+.animation div:nth-of-type(1) {
+    background-color: pink;
+    width: 100px;
+    height: 100px;
+}
+
+.animation div:nth-of-type(2) {
+    background-color: rgb(82, 154, 178);
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+    transition: transform 1s ease-in;
+}
+
+.animation:active div:nth-of-type(1) {
+    transform: translateX(55px);
+}
+
+.animation:active div:nth-of-type(2) {
+    transform: translateX(300px);
+    transition-delay: 1s;
+}

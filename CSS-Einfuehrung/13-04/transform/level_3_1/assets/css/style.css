@@ -1,0 +1,82 @@
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+article {
+    display: flex;
+    padding: 20px;
+    transform: rotateY(-20deg) rotateX(10deg) rotateZ(5deg);
+    border-radius: 10px;
+    margin-top: -20px;
+    transition: all 1s;
+}
+article:hover {
+    transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+    z-index: 1;
+}
+
+article:nth-of-type(1) {
+    background-color: hsla(127, 76%, 53%, 0.7);
+}
+article:nth-of-type(2) {
+    background-color: rgba(43, 198, 226, 0.7);
+}
+article:nth-of-type(3) {
+    background-color: rgba(137, 43, 226, 0.7);
+}
+
+article:nth-of-type(1):hover {
+    background-color: hsla(127, 76%, 53%);
+}
+article:nth-of-type(2):hover {
+    background-color: rgba(43, 198, 226);
+}
+article:nth-of-type(3):hover {
+    background-color: rgba(137, 43, 226);
+}
+
+
+
+img {
+    margin: 10px;
+}
+
+
+
+/*.animation div {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 10px;
+    transform-origin: center;
+    transition: all 1s;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animation div:nth-of-type(1):hover {
+    transform: translate(30px, 30px);
+}
+
+.animation div:nth-of-type(2):hover {
+    transform: translateX(-30px);
+}
+.animation div:nth-of-type(3):hover {
+    transform: translateY(30px);
+}
+.animation div:nth-of-type(4):hover {
+    transform: rotate(45deg);
+}
+.animation div:nth-of-type(5):hover {
+    transform: scale(2);
+}
+.animation div:nth-of-type(6):hover {
+    transform: skew(15deg, 15deg);
+}*/
