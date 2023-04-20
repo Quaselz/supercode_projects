@@ -1,0 +1,40 @@
+@import "variable";
+@import "mixin";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, main {
+    padding: 30px;
+    color: $firstColor;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    h1 {
+        font-size: 30px;
+    }
+    nav {
+        background-color: rgba(240, 152, 152, 0.709);
+        a {
+            color: purple;
+            &:hover {
+                background-color: black;
+            }
+        }
+    }
+}
+
+main {
+    display: block;
+}
+
+section {
+    &:first-of-type {
+        @include displayGrid-col3;
+    }
+}
+
+
+

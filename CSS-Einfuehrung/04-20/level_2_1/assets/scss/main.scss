@@ -1,0 +1,61 @@
+$firstColor: rgb(0, 195, 255);
+$secondColor: rgb(255, 0, 51);
+$thiredColor: rgb(255, 247, 0);
+$fourthColor: rgb(229, 55, 245);
+$mainColor: #fff;
+$textColor: #000;
+$spaceOut: 2rem;
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    min-height: 100vh;
+    min-height: 100svh;
+    background-image: linear-gradient(45deg, $firstColor 12.50%, $secondColor 12.50%, $secondColor 25%, $thiredColor 25%, $thiredColor 37.50%, $fourthColor 37.50%, $fourthColor 50%, $firstColor 50%, $firstColor 62.50%, $secondColor 62.50%, $secondColor 75%, $thiredColor 75%, $thiredColor 87.50%, $fourthColor 87.50%, $fourthColor 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    i {
+        align-self:normal;
+        font-size: $spaceOut;
+    }
+    div {
+        color: $mainColor;
+        text-align: center;
+        position: relative;
+        h1 {
+            font-size: calc($spaceOut*5);
+            position: relative;
+            z-index: 2;
+            text-transform: uppercase;
+        }
+        &:nth-of-type(2) {
+            align-self: end;
+            color: $textColor;
+            
+        }
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            height: 200px;
+            background-color: $thiredColor;
+            border-radius: 100%;
+            position: absolute;
+            z-index: 0;
+            top: -100px;
+            right: -100px;
+            font-size: calc($spaceOut);
+            color: #000;
+        }
+    }
+}
+
+
+

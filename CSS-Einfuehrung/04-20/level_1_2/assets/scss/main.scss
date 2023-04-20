@@ -1,0 +1,113 @@
+$space-out: 1rem;
+
+@mixin displayFlex($display, $jc:center, $ai:center,$direction: row, $flex: nowrap) {
+    display: $display;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $direction;
+    flex-wrap: $flex;
+}
+
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.header {
+	height: 6rem;
+	text-align: center;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	padding: 1.5rem;
+}
+
+h1, h2 {
+	font-size: $space-out;
+}
+
+.nav_links {
+    @include displayFlex(flex);
+	margin-top: $space-out;
+	margin-bottom: $space-out;
+	background-color: rgba(0, 0, 255, 0.514);
+}
+
+
+a {
+    padding: $space-out;
+	text-decoration: none;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.main {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.section_text > h3 {
+	text-align: center;
+}
+
+.section_text, .section_images {
+	margin: $space-out;
+}
+
+.section_images {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+    
+}
+img {
+	height: 12rem;
+	width: 18rem;
+	margin: 0 0.5rem $space-out 0.5rem
+}
+
+.aside {
+    @include displayFlex(flex, center, center, column, nowrap);
+	margin: $space-out;
+}
+
+
+.first_aside, .second_aside, .third_aside, .fourth_aside {
+	border: 0.2rem solid rgba(0, 0, 255, 0.678);    
+	padding: $space-out;
+	margin-bottom: $space-out;
+}
+
+.footer_links {
+    @include displayFlex(flex, center, center, row, nowrap);
+	margin-bottom: $space-out;
+}
+.footer {
+	height: 5rem;
+	margin-top: $space-out;
+	background-color: rgba(0, 0, 255, 0.678);
+}
+
+@media screen and (min-width: 600px) {
+	.section_images {
+        @include displayFlex(flex, center, center, row, wrap);
+	}
+
+	.section_text {
+    	width: 70%;
+	}
+
+	.aside {
+        @include displayFlex(flex, center, center, row, wrap);
+    	display: flex;
+    	flex-flow: row wrap;
+	}
+
+	.first_aside, .second_aside, .third_aside, .fourth_aside {
+    	width: 45%;
+    	margin: 0.5rem;
+	}
+}
+

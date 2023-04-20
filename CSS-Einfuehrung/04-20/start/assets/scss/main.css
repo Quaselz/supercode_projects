@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header, main {
+  padding: 30px;
+  color: blue;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+header h1, main h1 {
+  font-size: 30px;
+}
+header nav, main nav {
+  background-color: rgba(240, 152, 152, 0.709);
+}
+header nav a, main nav a {
+  color: purple;
+}
+header nav a:hover, main nav a:hover {
+  background-color: black;
+}
+
+main {
+  display: block;
+}
+
+section:first-of-type {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}/*# sourceMappingURL=main.css.map */

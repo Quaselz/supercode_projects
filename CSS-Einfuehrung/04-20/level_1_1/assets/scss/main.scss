@@ -1,0 +1,15 @@
+$fontSize: 40px;
+$color: #808080;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.lab {
+    font-size: $fontSize;
+    color: $color;
+}
+
+
