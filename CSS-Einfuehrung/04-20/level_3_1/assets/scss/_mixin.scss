@@ -1,0 +1,35 @@
+
+@mixin content($flexDirection) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: $flexDirection;
+    margin: $spaceOut;
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 40%;
+        h2 {
+            font-size: calc($spaceOut*2);
+            font-weight: 700;
+            margin: $spaceOut;
+        }
+        p {
+            margin: $spaceOut;
+            font-size: $spaceOut;
+        }
+        a {
+            text-align: center;
+            background-color: $thiredColor;
+            color: $mainColor;
+            width: 100%;
+            padding:calc($spaceOut/2);
+            transition: transform .2s;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
