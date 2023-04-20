@@ -10,10 +10,10 @@ section {
     height: 50px;
     background-color: red;
     border-radius: 10px;
-    transform-origin: bottom left;
     transition: all 1s;
+    transform-origin: bottom left;
 }
 
-.animation:hover div {
+.animation div:hover{
     transform: rotate(90deg) scale(2);
 }
