@@ -1,0 +1,26 @@
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+.level3_1 {
+	max-width: 40%;
+	border: 3px solid black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 5rem;
+	background: linear-gradient(
+		225deg,
+		rgba(233, 2, 254, 1) 0%,
+		rgba(233, 2, 254, 1) 30%,
+		rgba(0, 31, 255, 1) 100%
+	);
+}
+.level3_1 div {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0.5rem;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="level1_1">
+			<form action="" id="form" onsubmit="doubleMe(); return false">
+				<label for="number">DoubleMe</label>
+				<input class="color" type="number" name="number" id="number" />
+				<br />
+				<input id="btn" type="submit" value="Verdoppelt mich" />
+			</form>
+		</div>
+
+		<div class="level1_2">
+			<form action="" id="form1" onsubmit="ageMe(); return false">
+				<label for="number">Your Birthyear</label>
+				<input type="number" min="1900" max="2099" id="year" />
+				<br />
+				<input id="btn1" type="submit" value="Show my Age" />
+			</form>
+		</div>
+
+		<div class="level1_3">
+			<form action="" id="form2" onsubmit="diffUs(); return false">
+				<label for="number">Alter 1</label>
+				<input type="number" id="alter1" />
+				<label for="number">Alter 2</label>
+				<input type="number" id="alter2" />
+				<br />
+				<input id="btn2" type="submit" />
+			</form>
+		</div>
+		<script type="text/javascript" src="./assets/js/main.js"></script>
+	</body>
+</html>

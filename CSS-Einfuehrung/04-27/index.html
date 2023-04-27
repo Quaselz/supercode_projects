@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JS Test</title>
+	</head>
+	<body>
+		<form action="" id="form" onsubmit="getInputValue(); return false">
+			<p>Select your favorite colors:</p>
+			<label for="c1">red</label>
+			<input class="color" type="checkbox" name="color" value="red" id="c1" />
+			<label for="c2">green</label>
+			<input class="color" type="checkbox" name="color" value="green" id="c2" />
+			<label for="c3">blue</label>
+			<input class="color" type="checkbox" name="color" value="blue" id="c3" />
+			<br />
+			<input id="btn" type="submit">
+				Get Selected Colors
+			</input>
+		</form>
+
+		<script>
+			function getInputValue() {
+				const outout = document.querySelector("#form");
+				/*let checkboxes = document.querySelectorAll(".color:checked");*/
+
+				/*let green = document.querySelector("#c2:checked").value;
+				let red = document.querySelector("#c1:checked").value;
+				let blue = document.querySelector("#c3:checked").value;*/
+
+				let redIsChecked = document.querySelector("#c1").checked;
+				let greenIsChecked = document.querySelectorAll('input[name="color"]:checked');
+				let blueIsChecked = document.querySelector("#c3").value;
+
+				/*console.log(green, red, blue);*/
+				console.log("-----------------");
+				console.log(redIsChecked, greenIsChecked, blueIsChecked);
+			} 
+			/* const btn = document.querySelector("#btn");
+			btn.addEventListener("click", (event) => {
+				let checkboxes = document.querySelectorAll(
+					'input[name="color"]:checked'
+				);
+				let values = [];
+				checkboxes.forEach((checkbox) => {
+					values.push(checkbox.value);
+				});
+				console.log(values);
+			});*/
+		</script>
+	</body>
+</html>
