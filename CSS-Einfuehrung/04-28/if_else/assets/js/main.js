@@ -49,8 +49,8 @@ function doMath() {
 	let zwischenSum = number - 27;
 
 	if (zwischenSum > 27) {
-		number *= 2;
-		console.log("multiplizieren:" + number);
+		zwischenSum *= 2;
+		console.log("multiplizieren:" + zwischenSum);
 	}
 }
 
