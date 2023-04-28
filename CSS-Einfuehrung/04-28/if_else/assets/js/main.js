@@ -3,6 +3,7 @@ const outPut = document.querySelector(".outputLevel1_1");
 const outPut1 = document.querySelector(".outputLevel1_3");
 
 function ageCheck() {
+	event.preventDefault();
 	let age = document.querySelector("#age").value;
 
 	if (age >= 18) {
@@ -13,16 +14,15 @@ function ageCheck() {
 }
 
 // level1_3
-document
-	.querySelector("#submit1")
-	.addEventListenerfunction("click", function (event) {
-		event.preventDefault();
-		if (document.getElementById("age1").value >= 18) {
-			outPut1.innerHTML = "Ja, Du kannst Shisha rauchen";
-		} else {
-			outPut1.innerHTML = "Du darfst noch nicht Shisha rauchen";
-		}
-	});
+document.getElementById("submit1").addEventListener("click", function (event) {
+	event.preventDefault();
+	console.log(event);
+	if (document.getElementById("age1").value >= 18) {
+		outPut1.innerHTML = "Ja, Du kannst Shisha rauchen";
+	} else {
+		outPut1.innerHTML = "Du darfst noch nicht Shisha rauchen";
+	}
+});
 
 // level1_2
 function weatherCheck() {
