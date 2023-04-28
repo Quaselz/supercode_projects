@@ -26,8 +26,12 @@ function diffUs() {
 	const outPut = document.querySelector(".level1_3");
 	let age1 = document.querySelector("#alter1").value;
 	let age2 = document.querySelector("#alter2").value;
+	let diff;
 
-	let diff = age1 - age2;
-
+	if (age1 > age2) {
+		diff = age1 - age2;
+	} else {
+		diff = age2 - age1;
+	}
 	outPut.innerHTML += "<p>Die Differenz ist: <br/>" + diff + ".</p>";
 }
