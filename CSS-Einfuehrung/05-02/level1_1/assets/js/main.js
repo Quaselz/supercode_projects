@@ -74,10 +74,9 @@ let anotherText4 = anotherText.slice(0, 4) + anotherText.slice(4,16).toUpperCase
 
 const anotherText5Array = anotherText.split(" ");
 for (var i = 0; i < anotherText5Array.length; i++) {
-    console.log(anotherText5Array);
     anotherText5Array[i] = anotherText5Array[i].charAt(0).toUpperCase() + anotherText5Array[i].slice(1);
 }
-const anotherText5 = anotherText5Array.join(" ");
+let anotherText5 = anotherText5Array.join(" ");
 
 
 console.log(anotherText1);
