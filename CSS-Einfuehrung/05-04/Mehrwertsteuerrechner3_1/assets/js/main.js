@@ -29,7 +29,9 @@ myForm.addEventListener("submit", (event) => {
 	const taxRateCheck = document.querySelector(
 		'input[name="steuersatz"]:checked'
 	);
-	const amount = Number(document.querySelector("#number").value);
+	const amount = Number(
+		document.querySelector("#number").value.replace(",", ".")
+	);
 	let taxRate = Number(taxRateCheck.value);
 	let result, taxRateResult;
 
