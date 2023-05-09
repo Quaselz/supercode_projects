@@ -45,14 +45,10 @@ let albumArray = [
 	"DOGATBEACH.jpg",
 ];
 
-let albums = albumArray.map((album, index) => {
-	let indexOf = album.indexOf(".");
-
-	if (indexOf === -1) {
-		return (album = "invalied");
-	} else {
-		return album.slice(0, indexOf).toLocaleLowerCase();
-	}
-});
+let albums = albumArray.map((album) =>
+	album.indexOf(".") === -1
+		? (album = "invalied")
+		: album.slice(0, album.indexOf(".")).toLocaleLowerCase()
+);
 
 console.log({ albums });
