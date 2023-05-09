@@ -46,9 +46,9 @@ let albumArray = [
 ];
 
 let albums = albumArray.map((album) =>
-	album.indexOf(".") === -1
+	album.lastIndexOf(".") === -1
 		? (album = "invalied")
-		: album.slice(0, album.indexOf(".")).toLocaleLowerCase()
+		: album.slice(0, album.lastIndexOf(".")).toLocaleLowerCase()
 );
 
 console.log({ albums });
