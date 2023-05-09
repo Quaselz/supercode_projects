@@ -51,7 +51,7 @@ console.log(`favoriteFood: ${favoriteFood}`);
 //Level1_5
 console.log("Level1_5");
 console.log("========");
-//pop entfernt ersten Wert
+//pop entfernt letzten Wert
 
 let soloPersonPop = person.pop();
 console.log(`soloPersonPop: ${soloPersonPop}`);
@@ -111,3 +111,46 @@ let text =
 let newText = text.split(" ");
 
 console.log({ newText });
+
+let imgArray = ["img1", "img2", "img3"];
+for (let index = 0; index < imgArray.length; index++) {
+	const img = imgArray[index];
+	console.log(img);
+}
+
+//numbers
+
+let numbers = [10, 5, 2, 4];
+let numbers2 = [];
+
+let numbers1 = numbers.map((Pfannkuchen) => {
+	return Pfannkuchen * 2;
+});
+console.log({ numbers1 });
+
+numbers.forEach((elt, index) => {
+	numbers2[index] = elt * 2;
+});
+
+console.log({ numbers2 });
+console.log({ numbers });
+
+//names
+console.log("===================");
+const studentNames = ["Nina", "Tom", "Simon"];
+
+studentNames.forEach((names) => {
+	console.log(names.toUpperCase());
+});
+
+studentNames.map((names) => {
+	console.log(names.toUpperCase());
+});
+
+let names = [];
+studentNames.forEach((elt, index) => {
+	names[index] = elt.toLowerCase();
+});
+
+console.log(names);
+console.log(studentNames.map((names) => names.toUpperCase()));
