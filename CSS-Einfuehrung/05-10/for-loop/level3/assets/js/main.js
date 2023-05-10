@@ -31,8 +31,12 @@ document.querySelector("#loop-btn").addEventListener("click", (e) => {
 		return;
 	}
 	for (let index = 0; index < loopCount; index++) {
-		if (index % 2) {
-			oSize += "0";
+		if (loopCount % 2) {
+			if (index % 2) {
+				oSize += "0";
+			} else {
+				oSize += "o";
+			}
 		} else {
 			oSize += "o";
 		}
