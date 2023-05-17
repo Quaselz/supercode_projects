@@ -9,7 +9,7 @@ function changeHandle() {
 	inputs.forEach((input, i) => {
 		inputValues[i] = Number(input.value).toString(16);
 	});
-	console.log(inputValues);
+
 	document.body.style.backgroundColor = `#${inputValues[0]}${inputValues[1]}${inputValues[2]}`;
 
 	outputDisplay.innerHTML = `Du hast die Farbe ${counter} mal geändert und zur Farbe #${inputValues[0]}${inputValues[1]}${inputValues[2]}`;
