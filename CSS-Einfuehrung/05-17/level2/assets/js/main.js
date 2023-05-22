@@ -43,13 +43,18 @@ console.log(filterMetall);
 
 const table = document.createElement("table");
 edelMetallPreise.unshift(["name", "preiseGramEuro", "veraenderung"]);
-edelMetallPreise.forEach((metall) => {
+edelMetallPreise.forEach((metall, index) => {
 	const tr = document.createElement("tr");
 	for (const key in metall) {
-		const element = metall[key];
-		const td = document.createElement("td");
-		td.textContent = element;
-		tr.appendChild(td);
+		const cellValue = metall[key];
+		let cell;
+		if (index === 0) {
+			zelle = document.createElement("th");
+		} else {
+			zelle = document.createElement("td");
+		}
+		zelle.textContent = cellValue;
+		tr.appendChild(cell);
 	}
 	table.appendChild(tr);
 });
