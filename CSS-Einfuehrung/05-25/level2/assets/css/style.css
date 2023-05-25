@@ -1,0 +1,15 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+figure,
+img {
+	max-height: 25%;
+	max-width: 25%;
+}
