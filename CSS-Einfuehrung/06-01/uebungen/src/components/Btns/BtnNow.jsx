@@ -1,6 +1,6 @@
 const BtnNow = () => {
     return ( 
-        <a href="#" class="btnNow">Buy Now</a>
+        <a href="#" className="BtnNow">Buy Now</a>
      );
 }
  
