@@ -1,0 +1,16 @@
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.navbar a {
+	color: green;
+	display: inline-block;
+	padding: 0 1rem;
+}
+
+.navbar .active {
+	transform: scale(1.1);
+	transition: all 0.5s;
+	background-color: rgb(4, 0, 255);
+}
