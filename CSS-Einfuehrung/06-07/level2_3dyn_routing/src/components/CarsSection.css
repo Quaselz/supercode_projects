@@ -1,0 +1,11 @@
+.carSection {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+	text-align: center;
+}
+.carSection article {
+	background-color: #c0c0c0;
+	padding: 30px;
+	border-radius: 20px;
+}
