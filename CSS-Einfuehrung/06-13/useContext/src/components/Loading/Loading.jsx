@@ -12,6 +12,7 @@ const Loading = props => {
 
     const myTimer = () => {
         setLoad(true)
+        clearInterval(intevalId)
         window.cancelAnimationFrame(animationFrameId)
     }
 
@@ -49,8 +50,8 @@ const Loading = props => {
     }
 
     const createPosition = ( x, y) => { return {x,y} }
-    const getRandomFloat = (min, max) => Math.random    () * (max - min + 1) + min
-    const getRandomInt = (min, max) => Math.floor   (getRandomFloat(min,max))
+    const getRandomFloat = (min, max) => Math.random() * (max - min + 1) + min
+    const getRandomInt = (min, max) => Math.floor(getRandomFloat(min,max))
 
     const line = (start, end, thickness, opacity) => {
         ctxRef.current.beginPath();
