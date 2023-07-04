@@ -1,35 +1,45 @@
 export const firstEle = (array) => {
-	return array[0];
+	const newArray = [...array];
+	return newArray[0];
 };
 
 export const notLastEle = (array) => {
-	array.pop();
-	return array;
+	const newArray = [...array];
+	newArray.pop();
+	return newArray;
 };
 
 export const lastEle = (array) => {
-	return array.pop();
+	const newArray = [...array];
+	return newArray.pop();
 };
 
 export const allButLastEle = (array) => {
-	array.slice();
-	return array;
+	const newArray = [...array];
+
+	newArray.slice();
+	return newArray;
 };
 
 export const removeValue = (array, value) => {
+	const newArray = [...array];
 	const index = array.indexOf(value);
 	if (index > -1) {
-		array.splice(index, 1);
+		newArray.splice(index, 1);
 	}
-	return array;
+	return newArray;
 };
 
 export const uniqueArray = (array) => {
-	return array.filter((value, index, array) => array.indexOf(value) === index);
+	const newArray = [...array];
+	return newArray.filter(
+		(value, index, array) => array.indexOf(value) === index
+	);
 };
 
 export const sumNumArray = (array) => {
-	return array.reduce((a, b) => a + b, 0);
+	const newArray = [...array];
+	return newArray.reduce((a, b) => a + b, 0);
 };
 
 export const randomNumber = (a, b) => {
