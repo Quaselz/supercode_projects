@@ -13,6 +13,7 @@ const Loading = props => {
     const myTimer = () => {
         setLoad(true)
         clearInterval(intevalId)
+
         window.cancelAnimationFrame(animationFrameId)
     }
 
