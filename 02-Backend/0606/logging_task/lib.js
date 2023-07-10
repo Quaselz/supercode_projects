@@ -6,7 +6,9 @@ export const logging = async (logType, value) => {
 	const date = new Date();
 	try {
 		const logDirUrl = new URL("./logs", import.meta.url);
-		!fs.existsSync(logDirUrl) ? fsPromise.mkdir(logDirUrl) : null;
+		!fs.existsSync(logDirUrl)
+			? await fsPromise.mkdir(logDirUrl, { recursive: true })
+			: null;
 
 		const logDataUrl = new URL("./logs/log.txt", import.meta.url);
 

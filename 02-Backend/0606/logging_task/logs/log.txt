@@ -1,16 +1,8 @@
-Dein Log Thu Jul 06 2023 13:08:35 GMT+0200 (Central European Summer Time): - hello 
+warn-Log: Thu Jul 06 2023 16:50:02 GMT+0200 (Central European Summer Time): - warning 
 
-Dein Log Thu Jul 06 2023 13:08:38 GMT+0200 (Central European Summer Time): - hello 
+error-Log: Thu Jul 06 2023 16:50:02 GMT+0200 (Central European Summer Time): - hello1234 
 
-Dein Log Thu Jul 06 2023 13:08:40 GMT+0200 (Central European Summer Time): - hello 
+error-Log: Thu Jul 06 2023 16:50:02 GMT+0200 (Central European Summer Time): - hello 
 
-error-Log: Thu Jul 06 2023 13:25:57 GMT+0200 (Central European Summer Time): - hello 
-
-error-Log: Thu Jul 06 2023 13:26:31 GMT+0200 (Central European Summer Time): - hello 
-
-info-Log: Thu Jul 06 2023 13:26:31 GMT+0200 (Central European Summer Time): - meep 
-
-warn-Log: Thu Jul 06 2023 13:26:31 GMT+0200 (Central European Summer Time): - warning 
-
-error-Log: Thu Jul 06 2023 13:26:31 GMT+0200 (Central European Summer Time): - hello1234 
+info-Log: Thu Jul 06 2023 16:50:02 GMT+0200 (Central European Summer Time): - meep 
 
