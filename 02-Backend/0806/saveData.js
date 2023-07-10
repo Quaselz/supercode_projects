@@ -9,7 +9,6 @@ export const saveData = async (data) => {
 	const dataFile = new URL("./data/post.json", import.meta.url);
 
 	const newData = await getComments(data);
-	console.log(newData);
 	await fsPromise.writeFile(dataFile, JSON.stringify(newData, null, 4));
 };
 
