@@ -10,7 +10,7 @@ let id = 0;
 let myUrlId;
 const getId = (ele) => (ele.id = id & id++);
 
-//app.use(express.json());
+app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get("/", (req, res) => {
@@ -33,7 +33,7 @@ app.get("/contacts/:id", (req, res) => {
 app.post("/contacts", (req, res) => {
 	const contact = {
 		name: req.body.name,
-		color: req.body.tele,
+		color: req.body.color,
 		tele: req.body.tele,
 	};
 	//const contact = { name: "klaus", color: "blue", tele: "tolongtodisplay" };
