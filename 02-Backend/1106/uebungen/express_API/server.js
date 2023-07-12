@@ -58,7 +58,7 @@ app.use(async (req, res, next) => {
 });
 
 app.get("/status", (req, res) => {
-	res.json(res.statusCode, ": OK");
+	res.status(200).json(res.statusCode, ": OK");
 });
 
 app.get("/posts", (req, res) => {
