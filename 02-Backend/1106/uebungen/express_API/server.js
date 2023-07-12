@@ -9,7 +9,8 @@ let posts, id;
 
 const dataFolder = new URL("./data", import.meta.url);
 const dataFile = new URL("./data/posts.json", import.meta.url);
-app.listen(port, () => {
+app.listen(port, async () => {
+	await setup();
 	console.log("tschuuu tschuuu");
 });
 
@@ -18,9 +19,9 @@ const setup = async () => {
 
 	const hasFolder = await exists(dataFolder);
 	const hasFile = await exists(dataFile);
-	/* 	if (!hasFolder) {
+	if (!hasFolder) {
 		await fsPromise.mkdir(dataFolder);
-	} */
+	}
 	if (!hasFile) {
 		const url = "https://jsonplaceholder.typicode.com/posts";
 		await fetch(url)
@@ -51,7 +52,7 @@ const exists = async (path) => {
 
 app.use(express.json());
 app.use(async (req, res, next) => {
-	await setup();
+	//await setup();
 
 	next();
 });
